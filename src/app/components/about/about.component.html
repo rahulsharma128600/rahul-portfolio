@@ -1,0 +1,34 @@
+<section id="about">
+  <mat-card class="about-card">
+    <div class="about-content">
+      <div class="about-image">
+        <img src="/avatar.jpg" alt="Profile photo" />
+      </div>
+
+      <div class="about-info">
+        <h2 class="name-text">{{ name }}</h2>
+        <h4 class="role-text">{{ role }}</h4>
+        <p [innerHTML]="description"></p>
+
+        <!-- Resume Button and Preview -->
+        <div class="button-container">
+          <button mat-raised-button class="resume-button" (click)="downloadResume()" (mouseenter)="showPreview = true"
+            (mouseleave)="showPreview = false">
+            <mat-icon>save_alt</mat-icon>
+            <span>View Resume</span>
+          </button>
+
+          <div *ngIf="showPreview" class="pdf-preview">
+            <div class="preview-message">
+              Click on button to download resume
+            </div>
+            <pdf-viewer [src]="pdfUrl" [render-text]="true" [original-size]="false" [show-all]="false" [page]="1"
+              style="height: 200px;">
+            </pdf-viewer>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </mat-card>
+</section>

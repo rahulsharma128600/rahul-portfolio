@@ -1,0 +1,171 @@
+.name-text {
+  background: linear-gradient(#33dfeb, #4338bd, #15c8e3 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.role-text {
+  background: linear-gradient( #33dfeb, #4338bd, #15c8e3 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-card {
+  width: 100%;
+  height: fit-content;
+  background: transparent;
+  border-radius: 16px;
+  padding: 8rem 1rem 2rem 1rem;
+  display: flex;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* .about-image img {
+  width: 240px;
+  height: 340px;
+  margin-right: 2rem;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 768px) {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0.5rem auto;
+  }
+} */
+
+.about-image img {
+  width: 350px;
+  height: 340px;
+  margin-right: 2rem;
+  object-fit: cover;
+  border-radius: 10%;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  image-rendering: auto;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+
+  @media (max-width: 768px) {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0.5rem auto;
+  }
+}
+
+
+.about-info {
+  flex: 1;
+
+  h2, h4 {
+    margin: 0;
+  }
+
+  p {
+    margin: 1rem 0;
+    line-height: 1.6;
+  }
+}
+
+/* Resume button CSS */
+
+/* .resume-button{
+  background: linear-gradient(to right, #3b0a45, #4338bd, #6a0572 );
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+} */
+/* .button-container {
+  display: flex;
+  position: fixed;
+  flex-direction: row ;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.resume-hover-container {
+  position: absolute;
+  display: inline-block;
+}
+
+.pdf-preview {
+  position: relative;
+  top: 100px;
+  left: 0;
+  width: 100px;
+  height: 150px;
+  border: 1px solid #ccc;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+} */
+
+.button-container {
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-button {
+  background: linear-gradient(to right, #3b0a45, #4338bd, #6a0572);
+  color: white;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Preview appears below the button */
+.pdf-preview {
+  position: absolute;
+  top: 100%;
+  margin-top: 1rem;
+  width: 160px;
+  max-width: 90vw;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.preview-message {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  font-weight: 500;
+}
+

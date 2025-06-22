@@ -1,0 +1,33 @@
+<!-- Header with responsive toolbar and sidenav -->
+
+<mat-toolbar color="primary" class="toolbar">
+  <span class="toolbar-title">{{ appName }}</span>
+  <span class="spacer"></span>
+  <ng-container *ngIf="screenService.isHandset$ | async; else desktopMenu">
+    <button mat-icon-button (click)="isSidenavOpen = !isSidenavOpen" aria-label="Menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </ng-container>
+
+  <ng-template #desktopMenu>
+    <button mat-button *ngFor="let section of sectionList" (click)="scrollToSection(section)">{{ section }}</button>
+  </ng-template>
+</mat-toolbar>
+
+<!-- Custom sidenav overlay for mobile -->
+<div class="custom-sidenav-overlay" *ngIf="isSidenavOpen && (screenService.isHandset$ | async)"
+     (click)="isSidenavOpen = false">
+
+  <div class="custom-sidenav" (click)="$event.stopPropagation()">
+    <mat-nav-list>
+      <a
+        mat-list-item
+        *ngFor="let section of sectionList"
+        href="#"
+        (click)="scrollToSection(section)"
+      >
+        {{ section }}
+      </a>
+    </mat-nav-list>
+  </div>
+</div>

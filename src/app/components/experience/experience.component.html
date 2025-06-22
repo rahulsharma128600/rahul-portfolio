@@ -1,0 +1,48 @@
+<section id="experience">
+  <mat-card class="experience-section">
+    <h2>My Experience</h2>
+
+    <div class="experience-container">
+      <mat-card *ngFor="let exp of experiences" class="experience-card">
+        <mat-card-header>
+          <mat-card-title>{{ exp.role }}</mat-card-title>
+          <mat-card-subtitle>{{ exp.company }} • {{ exp.duration }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <!-- <p>{{ exp.description }}</p> -->
+          <ul class="experience-list">
+            <li *ngFor="let point of exp.experienceList">{{ point }}</li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </mat-card>
+</section>
+
+
+
+<!-- Code to show Lines in front of each Experience Card woth numbers in circle; -->
+<!-- Comment above and Uncomment below to show lines -->
+
+<!-- <mat-card class="experience-section">
+  <h2>My Experience</h2>
+
+  <div class="timeline-container">
+    <div *ngFor="let exp of experiences; let i = index" class="timeline-item">
+      <div class="timeline-step">
+        <div class="circle">{{ i + 1 }}</div>
+        <div class="line" *ngIf="i < experiences.length - 1"></div>
+      </div>
+
+      <mat-card class="experience-card">
+        <mat-card-header>
+          <mat-card-title>{{ exp.role }}</mat-card-title>
+          <mat-card-subtitle>{{ exp.company }} • {{ exp.duration }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ exp.description }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</mat-card> -->

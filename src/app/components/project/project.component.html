@@ -1,0 +1,42 @@
+<section id="projects">
+  <mat-card class="project-section">
+    <h2>My Projects</h2>
+
+    <div class="project-grid">
+      <mat-card class="project-card" *ngFor="let project of projects">
+        <mat-card-header>
+          <mat-card-title>{{ project.name }}</mat-card-title>
+        </mat-card-header>
+
+        <img mat-card-image [src]="project.image" alt="{{ project.name }} image" />
+
+        <mat-card-content>
+          <p>{{ project.description }}</p>
+          <p><strong>Tech Stack:</strong> {{ project.techStack.join(', ') }}</p>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <span matTooltip="Project not available" [matTooltipDisabled]="!!project.liveUrl">
+            <button mat-raised-button color="primary" [disabled]="!project.liveUrl"
+              (click)="openLiveProject(project.liveUrl)">
+              View Project
+            </button>
+          </span>
+
+          <span matTooltip="Code not available" [matTooltipDisabled]="!!project.githubUrl">
+            <button mat-raised-button color="accent" [disabled]="!project.githubUrl"
+              (click)="openLiveProject(project.githubUrl)">
+              View Code
+            </button>
+          </span>
+
+          <!-- <button mat-raised-button color="accent" [disabled]="!project.githubUrl" matTooltip="Project not available"
+            [matTooltipDisabled]="project.githubUrl" (click)="openLiveProject(project.githubUrl)">
+            View Project
+          </button> -->
+
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </mat-card>
+</section>

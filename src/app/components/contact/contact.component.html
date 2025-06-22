@@ -1,0 +1,35 @@
+<section id="contact">
+    <mat-card class="contact-section">
+        <h2>Contact Me</h2>
+        <section class="contact-container">
+
+            <form [formGroup]="contactForm" (ngSubmit)="sendEmail()" class="contact-form">
+                <mat-form-field appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="name" placeholder="Your full name" class="input-field" />
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email" placeholder="you@example.com" />
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Subject</mat-label>
+                    <input matInput formControlName="subject" placeholder="What's this about?" />
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="message-box">
+                    <mat-label>Message</mat-label>
+                    <textarea matInput formControlName="message" rows="5"
+                        placeholder="Write your message here..."></textarea>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary" type="submit" [disabled]="contactForm.invalid">
+                    Send
+                </button>
+            </form>
+        </section>
+
+    </mat-card>
+</section>

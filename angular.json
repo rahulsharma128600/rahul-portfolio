@@ -16,6 +16,7 @@
             "outputPath": "dist/rs-portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/rahul-portfolio/",
             "polyfills": [
               "zone.js"
             ],

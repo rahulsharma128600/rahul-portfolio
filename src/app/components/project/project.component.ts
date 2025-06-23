@@ -23,8 +23,8 @@ projects = [
       image: './project1.png',
       description: 'A personal portfolio website built with Angular and Material UI to showcase my work and skills.',
       techStack: ['Angular', 'JavaScript','TypeScript', 'Material UI', 'HTML', 'CSS'],
-      liveUrl: '',
-      githubUrl: ''
+      liveUrl: 'https://rahulsharma128600.github.io/rahul-portfolio/',
+      githubUrl: 'https://github.com/rahulsharma128600/rahul-portfolio.git'
     },
     {
       name: 'Course Management Platform',

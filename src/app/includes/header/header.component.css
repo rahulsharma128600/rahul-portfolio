@@ -4,7 +4,8 @@
   font-weight: bold;
  color: #f0f0f0;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);  */
-  background: transparent;
+  /* background: transparent; */
+  background: linear-gradient( #034f5b , #4338bd, #510249 );
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   /* Remove above CSS to keep the black header */
   height: 64px;
@@ -47,7 +48,5 @@
 }
 
 .toolbar-title{
-  background: linear-gradient( #5bdcef , #4338bd, #c33bb5 );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #00DDDD;
 }

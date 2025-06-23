@@ -24,9 +24,7 @@
   text-align: center;
   margin-bottom: 30px;
   font-size: 2rem;
-  background: linear-gradient( #5bdcef , #4338bd, #c33bb5 );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #00DDDD;
 }
 
 .contact-form {

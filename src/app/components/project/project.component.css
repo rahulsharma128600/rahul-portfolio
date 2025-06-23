@@ -13,9 +13,7 @@
   text-align: center;
   margin-bottom: 30px;
   font-size: 2rem;
-  background: linear-gradient( #5bdcef , #4338bd, #c33bb5 );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #00DDDD;
 }
 
  .project-grid {
@@ -30,9 +28,24 @@
 
 .project-card {
   width: 100%;
-  max-width: 350px;  
+  max-width: 390px;  
   background: transparent;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+mat-card-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: linear-gradient( #034f5b , #4338bd, #510249 );
+  border-radius: 8px 8px 0 0;
+}
+
+mat-card-title {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
 }
 
 mat-card-image {
@@ -51,11 +64,23 @@ mat-card-actions {
 @media (min-width: 768px) {
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 1024px) {
   .project-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 599px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 100%;
   }
 }

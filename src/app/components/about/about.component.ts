@@ -35,7 +35,7 @@ export class AboutComponent {
 `;
 
   showPreview = false;
-  pdfUrl = 'https://drive.google.com/uc?export=download&id=18nPAty1xU-kLkPORrcJJ2K9Q_y5xGsHS';
+  pdfUrl = './resume.pdf';
 
   downloadResume() {
   const link = document.createElement('a');

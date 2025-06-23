@@ -16,14 +16,14 @@
         </mat-card-content>
 
         <mat-card-actions>
-          <span matTooltip="Project not available" [matTooltipDisabled]="!!project.liveUrl">
+          <span matTooltip="Awaiting deployment" [matTooltipDisabled]="!!project.liveUrl">
             <button mat-raised-button color="primary" [disabled]="!project.liveUrl"
               (click)="openLiveProject(project.liveUrl)">
               View Project
             </button>
           </span>
 
-          <span matTooltip="Code not available" [matTooltipDisabled]="!!project.githubUrl">
+          <span matTooltip="Code will be available shortly" [matTooltipDisabled]="!!project.githubUrl">
             <button mat-raised-button color="accent" [disabled]="!project.githubUrl"
               (click)="openLiveProject(project.githubUrl)">
               View Code

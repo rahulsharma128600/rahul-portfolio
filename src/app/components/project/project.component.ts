@@ -20,7 +20,7 @@ export class ProjectComponent {
 projects = [
     {
       name: 'Portfolio Website',
-      image: '/project1.png',
+      image: './project1.png',
       description: 'A personal portfolio website built with Angular and Material UI to showcase my work and skills.',
       techStack: ['Angular', 'JavaScript','TypeScript', 'Material UI', 'HTML', 'CSS'],
       liveUrl: '',
@@ -28,7 +28,7 @@ projects = [
     },
     {
       name: 'Course Management Platform',
-      image: '/project2.png',
+      image: './project2.png',
       description: 'An online learning platform where teachers can launch courses across subjects, manage schedules, and receive student reviews. Students can enroll based on ratings and preferences, enhancing course discovery and quality.',
       techStack: ['Java','SpringBoot', 'React', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
       liveUrl: '',

@@ -23,13 +23,13 @@ export class AboutComponent {
   name = 'Rahul Sharma';
   role = 'Fullstack Developer';
   description = `
-   I am a full-stack developer with 3 years of hands-on experience in building scalable and cloud-ready applications.
+   I am a full-stack developer with around 3 years of hands-on experience in building scalable and cloud-ready applications.
     My expertise lies in <strong>.NET Core, Angular, Web API, WPF,</strong> and <strong>SQL Server</strong>.
     <br><br>
     I'm passionate about developing clean, testable code and delivering impactful solutions across both frontend and backend.
     <br><br>
     Currently at Wolters Kluwer, I’ve worked extensively on a data migration platform, leveraging technologies like
-    <strong>Docker, SignalR, GitHub Actions,</strong> and <strong>Azure</strong> to enable efficient <strong>CI/CD pipelines</strong> and <strong>DevOps workflows</strong>.
+    <strong>Docker, SignalR, Azure,</strong> and <strong>GitHub Actions</strong> to enable efficient <strong>CI/CD Workflows</strong>.
     <br><br>
     I enjoy working on modern architectures and cloud-native applications, with a strong focus on performance, maintainability, and seamless integration.
 `;
